@@ -14,7 +14,7 @@ function showReviewList(req, res) {
 
   Review.getReviewList( req.query,(err, result) => {
     if(err) {
-      res.status(500).send({msg:'getReviewList error'});
+      res.status(500).send({msg:'getReviewList error'}); //dbConnection에서의 정보 입력이 잘못됐을 때 이 오류가 남.
       return;
     }
 
