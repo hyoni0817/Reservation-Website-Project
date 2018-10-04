@@ -6,7 +6,7 @@ const reviewRouter = require('./router/reviewRouter.js');
 
 //이걸 써야 body값을 받는다.
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json()); /
+app.use(bodyParser.json());
 
 app.use(morgan('dev'));
 app.use(reviewRouter);
