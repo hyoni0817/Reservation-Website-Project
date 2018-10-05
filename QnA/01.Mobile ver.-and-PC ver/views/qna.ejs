@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome to Happyghetti</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="css/qna-page.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .blok1 {
+        position: relative;
+        /* top:-52px; */
+        height: 300px;
+        background-image: url(/img/italian.jpg);
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .table-bordered th, .table-bordered td {
+        border: none;
+      }
+
+
+    </style>
+    <script>
+      var i = 0;
+      function dpChange(){
+        var change = document.getElementById("display-none");
+        change.style.display="block";
+        }
+
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid blok1">
+      <p id="one-main-text">
+        Q &amp; A
+      </p>
+    </div>
+    <div class="container-fluid mobile-nav-ver" style="padding: 52px 100px 30px 100px;">
+      <div class="nav-inquiry">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+             <a class="nav-link active" href="#">전체</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">예약 문의</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">운영 문의</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">기타 문의</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">건의 사항</a>
+           </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid que-selec" style="padding-top:10px;padding-bottom: 10px;">
+      <table>
+        <tr>
+          <td>
+            <select class="form-control" style="padding-left:10px" id="answer">
+              <option value="0">질문 전체</option>
+              <option value="1">답변 완료</option>
+            </select>
+          </td>
+          <td style="padding-left:10px;">
+            <a href="#" role="button" class="btn btn-primary">검색 초기화</a>
+          </td>
+          <td style="padding-left:10px;">
+            <a href="#" role="button" class="btn btn-primary">글쓰기</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="qna-first mobile-ver" style="padding-left:80px;padding-right:80px;">
+      <div class="table-pc-ver">
+        <div class="container-fluid" style="text-align:left;">
+            <!-- Table -->
+            <table class="table table-bordered" style="text-align:center">
+              <thead>
+                <tr>
+                  <th id="first-th">번호</th> <!-- Id바꾸기-->
+                  <th id="second-th">분류</th>
+                  <th id="third-th">제목</th>
+                  <th id="second-th">답변</th>
+                  <th id="second-th">작성자</th>
+                  <th id="five-th">작성일</th>
+                  <th id="second-th">조회</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>예약</td>
+                  <td>
+                    <a id="aTitle" href="/qnaView">어떻게 예약하나요?</a></td>
+                  <td>
+                    <img style="width:auto;height:20px;" src="img/complete.png"></img>
+                  </td><!--if/else로 처리해서 글자 띄우기(포토샵만들기)-->
+                  <td>김태희</td>
+                  <td>2018-09-07</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>예약</td>
+                  <td>
+                    <a id="aTitle" href="#">이번달 언제 휴무에요?</a></td>
+                  <td>
+                    <img style="width:auto;height:20px;" src="img/waiting.png"></img>
+                  </td><!--if/else로 처리해서 글자 띄우기(포토샵만들기)-->
+                  <td>김태희</td>
+                  <td>2018-09-07</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="table-mobile-ver">
+        <div class="container-fluid" style="text-align:left;">
+            <!-- Table -->
+            <table class="table table-bordered">
+              <tr class="qna-tr-mobile" style="cursor:pointer" onClick="location.href='/qnaView'">
+                  <td style="text-align:center;">예약</td>
+                  <td>
+                    어떻게 예약하나요?
+                      <img style="width:auto;height:20px;" src="img/complete.png"></img>
+                    <br>
+                    김태희 | 2018-09-07 | 조회수 2
+                  </td>
+              </tr>
+              <tr class="qna-tr-mobile" style="cursor:pointer" onClick="location.href='#'">
+                <td style="text-align:center;">운영</td>
+                <td>
+                  이번달 언제 휴무에요?
+                    <img style="width:auto;height:20px;" src="img/waiting.png"></img>
+                  <br>
+                  한효주 | 2018-09-08 | 조회수 5
+                </td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="search-form">
+          <table>
+            <tr>
+              <td>
+                <select class="form-control" name="condition">
+                  <option value="1">제목+내용</option>
+                  <option value="2">제목</option>
+                  <option value="3">내용</option>
+                  <option value="4">작성자</option>
+                </select>
+              </td>
+              <td>
+                <div class="input-group" style="text-align:left;padding-left:10px;">
+                  <input type="text" class="form-control" name="searchContent" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">검색</button>
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <div class="qna-third">
+      <div class="container-fluid" style="text-align:center;">
+        <div class="inputPagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+        <div class="locationAndPhonenumber">
+          <p>Address | 울산광역시 남구 화합로 186-1</p>
+          <p>Tel | 052)123-4567</p>
+        </div>
+        <div class="copyright">
+          <p>&copy;2017 Happyghetti</p>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
