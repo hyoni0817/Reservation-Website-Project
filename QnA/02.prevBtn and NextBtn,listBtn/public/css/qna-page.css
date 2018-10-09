@@ -1,0 +1,144 @@
+
+@media (min-width:767px) {
+  #display-none {
+    display: none !important;
+  }
+}
+
+@media (max-width:767px) {
+  .qna-third {
+    padding: 20px 0 20px 0 !important;
+  }
+  .qnaWri-first, .answer-wri {
+    padding:52px 0 0 0 !important;
+  }
+  .qnaWri-second {
+    padding:15px 15px !important;
+  }
+}
+
+@media (max-width:850px) {
+  .mobile-ver {
+    padding: 30px 0 0 0 !important;
+  }
+  .mobile-nav-ver {
+    padding: 52px 0 0 30px !important;
+  }
+}
+
+@media (max-width:644px) {
+  .table-pc-ver {
+    display: none !important;
+  }
+  .table-mobile-ver {
+    display: block !important;
+  }
+}
+@media (min-width:645px) {
+  .table-pc-ver {
+    text-align: center !important;
+    display: block !important;
+  }
+  .table-mobile-ver {
+    display: none !important;
+  }
+}
+
+@media (min-width:851px) {
+  .search-form {
+    padding-left: 80px;
+  }
+  .que-selec {
+    padding-left: 95px !important;
+  }
+}
+
+@media (max-width:358px) {
+  .qna-third {
+    padding: 20px 30px 20px 30px !important;
+  }
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+}
+
+i {
+  float:left;
+  padding-top:5px;
+  padding-right:10px;
+}
+
+
+#one-main-text {
+  padding: 100px 0;
+  font-size: 3em;
+  font-family: sans-serif;
+  text-align: center;
+  color : white;
+}
+.qna-first{
+  padding:30px 80px 30px 80px;
+  height: auto;
+  width: 100%;
+}
+
+.qnaWri-first, .answer-wri{
+  padding-top:52px;
+  height: auto;
+  width: 100%;
+}
+.qna-third, .qnaWri-second{
+  padding: 20px 115px 20px 115px;
+}
+.main-forth{
+  height: auto;
+  width: 100%;
+}
+.main-footer{
+  height: 150px;
+  width: auto;
+  background-color: black;
+}
+
+.locationAndPhonenumber {
+  padding: 10px 15px;
+  color:lightgray;
+}
+.copyright {
+  /*margin-top: 50px;*/
+  text-align: center;
+  color:lightgray;
+}
+
+.list-btn {
+  text-align:center;
+}
+
+
+.qna-tr-mobile:hover {
+  background-color: lightgray;
+}
+
+#aTitle {
+  color:#333;
+  text-decoration:none;
+}
+
+#aTitle:hover {
+  color:#3366ff;
+  text-decoration:none;
+}
+
+.table th a {
+  text-decoration:none;
+}
+
+pre {
+  background-color: #ffffff;
+  border: none;
+  white-space: pre-line; /*줄바꿈 시퀀스 유지*/
+}
