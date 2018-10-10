@@ -18,9 +18,8 @@ Review.getReviewList = function(query, callback) {
 			}
 
 			const totalCount = parseInt(result.length);
-			const maxPage = Math.ceil(totalCount / 6); //ceil함수는 소수점 이하 모두 올림
+			const maxPage = Math.ceil(totalCount / 10); //ceil함수는 소수점 이하 모두 올림
 			const offset = 10 * (page - 1);
-			console.log(offset);
 			const sql2 = sql + ' limit 10'+ ' offset ?;'; //한 페이지당 10개씩 보여주기
 
 			conn.query(sql2, offset, (err, results) => {
@@ -39,8 +38,6 @@ Review.getReviewList = function(query, callback) {
 					},
 					data : results,
 				}
-				console.log(sql2);
-				console.log(obj);
 				callback(null, obj);
 				conn.release();
 			})
