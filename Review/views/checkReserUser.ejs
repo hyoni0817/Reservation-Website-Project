@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Happyghetti</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/review-page.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .blok1 {
+      position: relative;
+      height: 300px;
+      background-image: url(../img/italian.jpg);
+      background-position: center center;
+      background-size: cover;
+      }
+
+    </style>
+    <script>
+      var i = 0;
+      function dpChange(){
+        var change = document.getElementById("display-none");
+        change.style.display="block";
+        }
+    </script>
+
+  </head>
+  <body onUnload="alert('경고')">
+    <div class="container-fluid blok1">
+      <div class="img-cover"></div>
+      <div class="container-fluid">
+        <div id="one-main-text">
+          리뷰
+        </div>
+      </div>
+    </div>
+    <div class="info-first">
+      <form class="form-horizontal" action="/checkReserUser" method="post">
+        <div class="container-fluid" style="text-align:center;">
+          <p>홈페이지를 통해 예약을 했었던 분들만 리뷰 작성이 가능합니다.<p>
+          <p>아래 이름과 핸드폰 번호를 입력해주시면 작성 가능한 리뷰를 확인할 수 있습니다.</p>
+        </div>
+        <div style="text-align:center;">
+          <!--예약자 이름과 휴대폰 번호 입력하는 폼 -->
+          <div class="form-group row usernm-and-phonenum">
+            <label for="userName" class="col-sm-4 control-label" id="edit-label">이름</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="userName" id="userName" aria-describedby="basic-addon2" autocomplete="off">
+            </div>
+          </div>
+          <div class="form-group row usernm-and-phonenum">
+            <label for="phoneNum" class="col-sm-4 control-label" id="edit-label">핸드폰 번호</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="phoneNum" id="phoneNum" aria-describedby="basic-addon2" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;padding-bottom:50px;">
+          <div class="send-button">
+            <button type="button" class="btn btn-light" onclick="cancelBtn()">취소</button>
+            <span style="padding-left:10px;"><input type="submit" value="확인" id="nextBtn" class="btn btn-light"></input></span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer class="main-footer">
+      <br>
+      <div class="locationAndPhonenumber">
+        <p>Address | 울산광역시 남구 화합로 186-1</p>
+        <p>Tel | 052)123-4567</p>
+      </div>
+      <div class="copyright">
+        <p>&copy;2018 Happyghetti</p>
+      </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/fileCheckAndBtn.js"></script>
+  </body>
+</html>
