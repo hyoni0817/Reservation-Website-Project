@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome to Happyghetti</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="/css/review-page.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      html, body {
+      height: 100%;
+      width: 100%;
+      }
+
+      btn-link {
+        text-decoration:none;
+        display:block;
+      }
+
+      .blok1 {
+      position: relative;
+      /* top:-52px; */
+      height: 300px;
+      background-image: url(/img/italian.jpg);
+      background-position: center center;
+      background-size: cover;
+      }
+    </style>
+    <script>
+      var i = 0;
+      function dpChange(){
+        var change = document.getElementById("display-none");
+        change.style.display="block";
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid blok1">
+      <p id="one-main-text">
+        리뷰
+      </p>
+    </div>
+    <div class="container-fluid">
+      <!-- 리뷰 정렬 관련 선택 부분(navAndSelect.js에 관련 소스 있음) -->
+      <div class="arr-select"  style="margin-top:30px;margin-bottom:10px;" >
+      </div>
+      <div style="text-align:right;margin-bottom:10px;">
+        <a href="/checkReserUser" role="button" class="btn btn-primary">글쓰기</a>
+      </div>
+      <p>예약을 통해 방문한 손님들이 남기신 후기입니다.</P>
+      <div class="accordion" id="accordionExample">
+        <!-- 작성한 리뷰를 보여줍니다 -->
+        <% for(var i=0; i< paging.count; i++) { %>
+          <div  class="card" style="padding-bottom:5px;border:1px solid rgba(0,0,0,0);">
+           <div class="card-header" id="heading<%=i %>">
+             <h4 class="mb-0">
+               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse<%=i %>" aria-expanded="false" aria-controls="collapse<%=i %>" style="width:100%;">
+                 <div style="display:block;">
+                   <span style="float:left;">
+                     <!-- for문 돌려서 별점 표현-->
+                     <% for(var j=1; j <= data[i].STARS; j++) { %>
+                     <img src="/img/star.png" style="width:13px;height:auto;"></img>
+                     <% } %>
+                   </span>
+                   <span style="float:right;">
+                     <%=data[i].RESER_DT %> 방문
+                   </span>
+                 </div>
+                 <br>
+                 <div style="display:block;">
+                   <span style="float:left;"><%=data[i].TITLE %></span>
+                   <i class="fas fa-chevron-down" style="float:right;"></i>
+                 </div>
+               </button>
+             </h4>
+           </div>
+           <div id="collapse<%=i %>" class="collapse" aria-labelledby="heading<%=i %>" data-parent="#accordionExample">
+             <div class="card-body">
+               <!--리뷰 작성시 등록했던 내용 나타내기 -->
+               <%=data[i].CONTENTS %>
+               <!--리뷰 작성시 등록했던 이미지 나타내기 -->
+               <% if(data[i].IMAGE !== 'N') { %>
+                <div style="text-align : center; padding-top:20px;">
+                  <img style="width:300px;height:auto;padding:20px 0 20px 0;" src="<%=data[i].IMAGE %>"></img>
+                </div>
+               <% } %>
+               <div style="padding-top:20px;">
+                 <!--좋아요/싫어요 버튼 표시(reviewAjax.js에 관련 소스 있음) -->
+                 <input type="image" src="/img/like.png" onclick="LikeClick(<%=data[i].WRITE_NO %>,<%=i %>)"></input><span id="likeNum<%=i %>"><%=data[i].LIKE_NUM %></span>
+                 <input type="image" src="/img/hate.png" onclick="HateClick(<%=data[i].WRITE_NO %>,<%=i %>)"></input><span id="hateNum<%=i %>"><%=data[i].HATE_NUM %></span>
+               </div>
+             </div>
+           </div>
+         </div>
+       <% } %>
+      </div>
+      <!--페이지네이션 부분(reviewPaging.js에 관련 소스 있음)-->
+      <div class="review-third">
+        <div class="container-fluid" style="text-align:center;">
+          <div class="inputPagination">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <br>
+      <div class="locationAndPhonenumber">
+        <p>Address | 울산광역시 남구 화합로 186-1</p>
+        <p>Tel | 052)123-4567</p>
+      </div>
+      <div class="copyright">
+        <p>&copy;2018 Happyghetti</p>
+      </div>
+    </footer>
+    <script src="js/reviewAjax.js"></script>
+    <script src="js/reviewPaging.js"></script>
+    <script src="js/navAndSelect.js"></script>
+    <!-- 사용자ip 주소 가져오는 스크립트 -->
+    <script type="text/javascript" src="http://jsgetip.appspot.com"></script>
+
+    <script>
+      var pager = new pager(<%=paging.maxPage %>, <%=paging.page %>, 'reviews', '<%=arr %>');
+      var arrSelect = new arrSelect('<%=arr %>');
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
