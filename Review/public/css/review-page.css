@@ -1,0 +1,99 @@
+
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+pre {
+  background-color: #ffffff;
+  border: none;
+  text-align: left;
+  white-space: pre-line; /*줄바꿈 시퀀스 유지*/
+}
+
+@media (max-width:575px) {
+  .usernm-and-phonenum {
+    text-align:left !important;
+  }
+  .review-contents {
+    text-align:left !important;
+  }
+
+  .review-filebox {
+    text-align:left !important;
+  }
+}
+
+@media (min-width:767px) {
+  #display-none {
+    display: none !important;
+  }
+}
+
+
+@media (max-width:767px) {
+  .review-third {
+    padding: 0 0 20px 0 !important;
+  }
+
+  .info-first {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width:991px) {
+  .send-button {
+    padding:20px 0 0 0 !important;
+  }
+}
+
+#one-main-text {
+  padding: 100px 0;
+  font-size: 3em;
+  font-family: sans-serif;
+  text-align: center;
+  color : white;
+}
+
+.info-first {
+  padding-top: 52px;
+  padding-left:100px;
+  padding-right:100px;
+  padding-bottom:20px;
+}
+
+.usernm-and-phonenum {
+  text-align:right;
+  margin:0 auto;
+  width:80%;
+  padding-bottom:10px;
+}
+
+.review-stat-img {
+  width:auto;
+  height:20px;
+}
+.review-contents {
+  text-align:right;
+}
+
+.review-filebox {
+  text-align:left;
+}
+
+.main-footer{
+  height: 150px;
+  width: auto;
+  background-color: black;
+}
+
+.locationAndPhonenumber {
+  padding: 0 15px;
+  color: lightgray;
+}
+.copyright {
+  text-align: center;
+  color : lightgray;
+}
