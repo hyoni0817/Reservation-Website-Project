@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="input-part">
-      <form>
+      <form id="check-info">
         <div class="container-fluid">
           <div class="form-group row">
             <label for="inputReserNo" class="col-sm-4 col-form-label">예약번호</label>
@@ -39,6 +39,13 @@
             <div class="col-sm-4">
               <input type="text" class="form-control" name="inputUserName" id="inputUserName">
             </div>
+          </div>
+        </div>
+        <div style="text-align:center;padding-bottom:50px;">
+          <div class="alert-view" style="padding:0 15px 0 15px;margin-top:30px;">
+          </div>
+          <div class="send-button">
+            <span style="padding-left:10px;"><input type="button" value="다음" id="next-btn" onclick="submitUserCheck()" class="btn btn-primary"></input></span>
           </div>
         </div>
       </form>
@@ -54,7 +61,7 @@
     </footer>
 
     <!-- 빈칸 및 예약한 내역 유무 체크 -->
-    <script src="/js/blankCheck.js"></script>
+    <script src="/js/checkAjax.js"></script>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
