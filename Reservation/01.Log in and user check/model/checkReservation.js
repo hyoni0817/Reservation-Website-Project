@@ -5,7 +5,7 @@ class CheckReser {}
 CheckReser.getInputReser = (tempUserName, tempReserNo, maxAge, callback) => {
 	pool.getConnection( (err, conn) => {
 		if(err) return callback(err, null);
-				var sql = 'select *, DATE_FORMAT(RESER_DT,"%Y-%m-%d") as RESER_DATE, DATE_FORMAT(RESER_DT,"%H:%i:%S") as RESER_TIME from reservation2 where RESER_NO = ? and USER_NM = ?;';
+				var sql = 'select *, DATE_FORMAT(RESER_DT,"%Y-%m-%d") as RESER_DATE, DATE_FORMAT(RESER_DT,"%H:%i:%S") as RESER_TIME from reservation where RESER_NO = ? and USER_NM = ?;';
         conn.query(sql,[tempReserNo, tempUserName], (err, result) =>{
             if(err) {
                 console.error('Error : ', err);
@@ -36,7 +36,7 @@ CheckReser.getInputReser = (tempUserName, tempReserNo, maxAge, callback) => {
 CheckReser.getReserInfoCheck = function(userName, reserNum, callback) {
 	pool.getConnection((err, conn) => {
 		if(err) return callback(err, null);
-		var sql = 'select \'Y\' as enable from reservation2 where RESER_NO = ? and USER_NM = ?';
+		var sql = 'select \'Y\' as enable from reservation where RESER_NO = ? and USER_NM = ?';
 
 		conn.query(sql, [reserNum, userName], (err, result) => {
 			if(err) {
