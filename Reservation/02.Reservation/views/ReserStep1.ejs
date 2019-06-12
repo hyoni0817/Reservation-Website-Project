@@ -41,28 +41,28 @@
       </p>
     </div>
     <div class="info-first">
-      <form id="check-info">
+      <form id="person-info">
         <div class="container-fluid">
           <div class="form-group"  style="padding-top:10px;">
-            <label for="userName" class="col-sm-4 col-form-label" id="sub-title"><img id="customer-icon" src="/img/customer.png">예약자 정보</label>
+            <label for="subTitle" class="col-sm-4 col-form-label" id="sub-title"><img id="customer-icon" src="/img/customer.png">예약자 정보</label>
           </div>
           <div class="form-group row">
-            <label for="inputReserNo" class="col-sm-4 col-form-label">이름</label>
+            <label for="userName" class="col-sm-4 col-form-label">이름</label>
             <div class="col-sm-4">
-              <input type="password" class="form-control" name="inputReserNo" id="inputReserNo">
+              <input type="text" class="form-control" name="userName" id="userName">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputUserName" class="col-sm-4 col-form-label">전화번호</label>
+            <label for="phoneNum" class="col-sm-4 col-form-label">전화번호</label>
             <div class="col-sm-4">
-              <input type="text" class="form-control" name="inputUserName" id="inputUserName">
+              <input type="text" class="form-control" name="phoneNum" id="phoneNum">
               (* '-'빼고 적어주세요.)
             </div>
           </div>
           <div class="form-group row">
             <label for="emailText" class="col-sm-4 col-form-label">이메일</label>
             <div class="col-sm-4">
-              <input type="text" class="form-control" autocomplete="off" name="emailText" id="emailText">
+              <input type="email" class="form-control" autocomplete="off" name="emailText" id="emailText">
             </div>
           </div>
           <div class="form-group row">
@@ -308,7 +308,7 @@
               </div>
             </div>
             <input type="checkbox" id="termsCheck" name="termsCheck" value="Y">
-            <label for="termsCheck">위의 약관에 동의합니다.</label>
+            <label for="termsCheck" style="font-weight:bold;">위의 약관에 동의합니다.</label>
           </div>
         </div>
         <div style="text-align:center;padding-bottom:50px;">
@@ -354,11 +354,12 @@
         });
 
     </script>
-    <script src="/js/blankCheck.js"></script>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="/js/blankCheck.js"></script>
   </body>
 </html>
