@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Reservation page</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/selectDate.css" rel="stylesheet">
+    <link href="../css/selectBox.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid blok1">
+      <p id="one-main-text">
+        예약 하기
+      </p>
+    </div>
+    <div class="reser-first">
+      <div class="container-fluid">
+        <div class="seat-plot-title" style="text-align:left">
+          <img style="width:auto;height:30px;padding-right:5px" src="/img/seats.png">좌석 배치도
+        </div>
+        <img src="/img/좌석 배치도_테이블번호.png" style="display:block;margin-left:auto;margin-right:auto" class="img-fluid" alt="Responsive image"></img>
+      </div>
+    </div>
+    <div class="reser-second">
+      <div class="date-time-title">
+        <img style="width:auto;height:30px;padding-right:5px;padding-left:10px;" src="/img/detail.png">세부 사항 선택
+      </div>
+      <form id="reser-info">
+        <div class="container-fluid" >
+        <div class="row">
+          <div class="col-md-6">
+            <div class="move-month" style="padding-bottom:5px; text-align:center">
+              <button type="button" id="prevMonthBtn" onClick="Calendar.prevMonth()"><i class="fas fa-chevron-left"></i></button>
+              <span style="padding-left:5px;padding-right:5px;" id="wantMonth"></span>
+              <button type="button" id="afterMonthBtn" onClick="Calendar.afterMonth()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="calendar" >
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="detail-option">
+              <table id="select-view">
+                <tr>
+                  <td class="table-label"><span class="table-label">날짜</span></td>
+                  <td id="date-sel"><span id="date-text">날짜를 선택해주세요.</span></td>
+                </tr>
+                <tr class="option-select" >
+                  <td class="table-label"><label for="item" class="table-label">시간</label></td>
+                  <td style="padding-top:5px;">
+                  <select name="selcetTime" class="form-control selTime" id="item">
+                    <option value="hide">시간을 선택해주세요</option>
+                    <option value="11:00:00" rel="icon-temperature">오전 11 : 00</option>
+                    <option value="11:30:00">오전 11 : 30</option>
+                    <option value="12:00:00">오후 12 : 00</option>
+                    <option value="12:30:00">오후 12 : 30</option>
+                    <option value="13:00:00">오후 01 : 00</option>
+                    <option value="13:30:00">오후 01 : 30</option>
+                    <option value="14:00:00">오후 02 : 00</option>
+                    <option value="14:30:00">오후 02 : 30</option>
+                    <option value="15:00:00">오후 03 : 00</option>
+                    <option value="15:30:00">오후 03 : 30</option>
+                    <option value="16:00:00">오후 04 : 00</option>
+                    <option value="16:30:00">오후 04 : 30</option>
+                    <option value="17:00:00">오후 05 : 00</option>
+                    <option value="17:30:00">오후 05 : 30</option>
+                    <option value="18:00:00">오후 06 : 00</option>
+                    <option value="18:30:00">오후 06 : 30</option>
+                    <option value="19:00:00">오후 07 : 00</option>
+                    <option value="19:30:00">오후 07 : 30</option>
+                    <option value="20:00:00">오후 08 : 00</option>
+                    <option value="20:20:00">오후 08 : 20</option>
+                  </select>
+                </td>
+                </tr>
+                <tr>
+                  <td class="table-label"><label for="item" class="table-label">인원</label></td>
+                  <td>
+                    <select class="form-control option-select selPeople" name="numOfPeople" id="item" style="text-align:center">
+                      <option value="hide">인원을 선택해주세요</option>
+                      <option value="1" rel="icon-temperature">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="option-select seat-select">
+                  <td class="table-label"><label for="item" class="table-label">좌석</label></td>
+                  <td>
+                  <select class="form-control selSeats" name="seats" id="item">
+                    <option value="hide">좌석을 선택해주세요</option>
+                  </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;padding-bottom:50px;">
+        <div class="alert-view" style="padding:0 15px 0 15px;margin-top:30px;">
+        </div>
+        <div class="send-button">
+          <button type="button" class="btn btn-primary" onclick="cancelBtn()">취소</button> <!--onclick()으로 alert 창 나타내서 취소할건지 한번도 물어보기 -->
+          <span style="padding-left:10px;"><input type="button" id="nextBtn" onclick="submitCheck()" class="btn btn-primary" value="완료"></input></span>
+        </div>
+      </div>
+    </form>
+
+    </div>
+    <footer class="main-footer">
+        <div class="location-and-Phonenumber">
+          <p>Address | 울산광역시 남구 화합로 186-1</p>
+          <p>Tel | 052)123-4567</p>
+        </div>
+        <div class="copyright">
+          <p>&copy;2017 Happyghetti</p>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/449d658271.js"></script>
+
+    <script src="/js/blankCheck.js"></script>
+    <script src="/js/selectBox.js"></script>
+    <script src="/js/calendar.js"></script>
+    <script src="/js/reserAjax.js"></script>
+    <script>
+      var btnStat = true;
+      var submitBtn = document.getElementById("nextBtn");
+      var prevMonthBtn = document.getElementById("prevMonthBtn");
+      var afterMonthBtn = document.getElementById("afterMonthBtn");
+
+
+      var tempArr = [];
+
+      setTimeout(function(){
+        //원래는 세션을 만료하셨습니다 이다.
+        alert("정해진 입력시간을 초과하셨습니다. 다시 진행해주세요.");
+        window.location.href = "/Reser/step1";
+      }, <%=MAXAGE %>);
+
+      <% for(var i = 0;i< impDt.length;i++){ %>
+        tempArr.push('<%=impDt[i].IMPOSSBLE_DT %>');
+      <% } %>
+      var Calendar = new Calendar(tempArr);
+      var ViewMonthBtn = new Calendar.ViewMonthBtn(0);
+
+      function cancelBtn() {
+        if (confirm("작성을 취소하겠습니까?") == true) {
+          btnStat = false;
+          window.location.href="/reser/step1";
+        }
+      }
+
+      submitBtn.addEventListener('click', function() {
+        btnStat = false;
+      });
+      prevMonthBtn.addEventListener('click', function() {
+        return btnStat = false;
+      });
+      afterMonthBtn.addEventListener('click', function() {
+        return btnStat = false;
+      });
+
+      window.addEventListener("beforeunload", function(event) {
+        if(btnStat == true) {
+          event.returnValue = "Write something clever here..";
+        }
+      });
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
