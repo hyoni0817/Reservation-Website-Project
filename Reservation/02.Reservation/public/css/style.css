@@ -13,6 +13,9 @@
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
+  .reser-first, .reser-second {
+    margin-left: 0px !important;
+  }
 }
 
 html, body {
@@ -111,6 +114,58 @@ background-size: cover;
   text-align: center;
 }
 
+/* STEP2 */
+.reser-first {
+  margin-top: 52px;
+  margin-left:20px;
+}
+.reser-second {
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  margin-left:20px;
+}
+
+#prevMonthBtn, #afterMonthBtn {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-radius: 25%;
+}
+
+#prevMonthBtn:hover, #afterMonthBtn:hover {
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+.table-label {
+  font-weight: bold;
+  padding-right:5px;
+  font-size:20px;
+  text-align: left;
+  /*padding-right: 50px;*/
+  width:100px;
+}
+.table {
+  height:auto;
+  border:1px solid #dee2e6;
+}
+.table td {
+  padding: 8px;
+}
+
+#date-sel {
+  font-size:15px;
+  background-color:rgb(233, 150, 122);
+  height:40px;
+  color:white;
+}
+.detail-option {
+  margin-top:30px;
+  text-align:center;
+}
+#select-view {
+  margin: auto;
+}
 
 /* STEP3 */
 /* 예약 내역 확인하는 부분 */
