@@ -122,7 +122,7 @@
         </div>
         <div class="send-button">
           <button type="button" class="btn btn-primary" onclick="cancelBtn()">취소</button> <!--onclick()으로 alert 창 나타내서 취소할건지 한번도 물어보기 -->
-          <span style="padding-left:10px;"><input type="button" id="nextBtn" onclick="submitCheck()" class="btn btn-primary" value="완료"></input></span>
+          <span style="padding-left:10px;"><input type="button" id="nextBtn" onclick="step2BlankCheck()" class="btn btn-primary" value="완료"></input></span>
         </div>
       </div>
     </form>
@@ -165,6 +165,7 @@
       }, <%=MAXAGE %>);
 
       <% for(var i = 0;i< impDt.length;i++){ %>
+        console.log("값이다이거슬아:",'<%=impDt[i].IMPOSSBLE_DT %>')
         tempArr.push('<%=impDt[i].IMPOSSBLE_DT %>');
       <% } %>
       var Calendar = new Calendar(tempArr);
