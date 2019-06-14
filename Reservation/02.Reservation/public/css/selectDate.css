@@ -1,0 +1,256 @@
+.th-day {
+  border:0px;
+}
+
+#active {
+  background-color: green;
+}
+
+.not-this-month {
+  color: #808080bf;
+}
+
+#selectDate1, #selectDate2, #selectDate3, #selectDate4, #selectDate5, #selectDate6, #selectDate7, #selectDate8, #selectDate9, #selectDate10,
+#selectDate11,#selectDate12, #selectDate13, #selectDate14, #selectDate15, #selectDate16, #selectDate17, #selectDate18, #selectDate19, #selectDate20,
+#selectDate21, #selectDate22, #selectDate23, #selectDate24, #selectDate25, #selectDate26, #selectDate27, #selectDate28, #selectDate29, #selectDate30,
+#selectDate31, #selectDate32, #selectDate33, #selectDate34, #selectDate35, #selectDate36, #selectDate37, #selectDate38{
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-radius: 25%;
+}
+
+#selectDate1:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate2:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate3:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate4:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate5:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate6:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate7:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate8:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate9:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate10:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate11:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate12:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate13:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate14:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate15:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate16:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate17:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate18:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate19:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate20:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate21:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate22:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate23:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate24:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate25:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate26:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate27:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate28:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate29:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate30:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+#selectDate31:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate32:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate33:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate34:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate35:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate36:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate37:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+#selectDate38:hover {
+  /*cursor:pointer;*/
+  border-radius: 25%;
+  background-color: #ebebe0;
+}
+
+.aleady-text {
+  display: none;
+  background-color: black;
+  color: white;
+  position: absolute; /*이게 설정이 안되면 깜빡임*/
+  padding:10px;
+  margin-top:10px;
+  font-size: 13px;
+}
+
+.aleady-date {
+  background-color: rgba(0,0,0,0);
+  border-radius: 25%;
+  border: none;
+  position: relative;
+  display: inline-block
+}
+.aleady-date:hover {
+  border-radius: 25% !important;
+  background-color: #ebebe0 !important;
+}
+
+.aleady-date:hover + .aleady-text{
+  display: block !important;
+  z-index: 200 !important;
+}
