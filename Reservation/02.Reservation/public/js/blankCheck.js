@@ -52,7 +52,7 @@ function step2BlankCheck() {
   var selPeoNumVal = selPeoNum[0].options[selPeoNum[0].selectedIndex].value;
   var selSeats = document.getElementsByClassName("selSeats");
   var selSeatsVal = selSeats[0].options[selSeats[0].selectedIndex].value;
-  
+
   var alertEle = document.getElementsByClassName("alert-view");
   var alertHTML;
   var stat = 0;
@@ -72,7 +72,8 @@ function step2BlankCheck() {
       alertHTML = '<div class="alert alert-danger" role="alert"><strong>다시 확인해주세요!</strong>인원을 선택하지 않으셨습니다.</div>';
       alertEle[0].innerHTML = alertHTML;
   } else {
-      sendAjax('/ajaxOverlapCheck', 'reser', selDateVal, selTimeVal, selPeoNumVal, selSeatsVal) //이름과 번호는 session에 저장되어 있으니 날짜만 보내면 된다.
-
+      sendAjax('/ajaxOverlapCheck', selDateVal, selTimeVal, selSeatsVal)
+      //이름과 번호는 session에 저장되어 있으니 날짜,시간,좌석만 보내면 된다.
+      //참고로 인원수 값을 전달하지 않는 이유는 인원수와 상관없이 같은 시간 날짜 좌석이 이미 예매 되어 있으면 다른 사람이 예매하면 안되기 때문이다.
    }
 }
