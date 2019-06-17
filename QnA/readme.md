@@ -1,4 +1,5 @@
-### QnA 내 각 폴더의 의미      
+>자세한 내용은 각 폴더의 readme.md를 참고해주세요.    
+## QnA 내 각 폴더의 의미      
 **01.Mobile ver.-and-PC ver**       
 사용자 디바이스를 고려한 반응형 웹 페이지 소스 코드    
 **02.prevBtn and NextBtn,listBtn**      
