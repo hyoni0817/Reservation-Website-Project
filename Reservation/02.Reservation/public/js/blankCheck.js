@@ -73,6 +73,7 @@ function step2BlankCheck() {
       alertEle[0].innerHTML = alertHTML;
   } else {
       sendAjax('/ajaxOverlapCheck', selDateVal, selTimeVal, selSeatsVal)
+      //sendAjax 함수 관련 소스코드는 reserAjax.js에 있다.
       //이름과 번호는 session에 저장되어 있으니 날짜,시간,좌석만 보내면 된다.
       //참고로 인원수 값을 전달하지 않는 이유는 인원수와 상관없이 같은 시간 날짜 좌석이 이미 예매 되어 있으면 다른 사람이 예매하면 안되기 때문이다.
    }
