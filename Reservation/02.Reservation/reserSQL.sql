@@ -1,12 +1,12 @@
 #예약 테이블 생성
 create table reservation (
 	RESERWRI_NO int(10) auto_increment,
-    RESER_NO int(20),
-    USER_NM varchar(50),
-    PHONE_NO varchar(15),
-    EMAIL varchar(50),
-    REQ_TERM mediumtext,
-    TERM_CK char(1),
+  RESER_NO int(20),
+  USER_NM varchar(50),
+  PHONE_NO varchar(15),
+  EMAIL varchar(50),
+  REQ_TERM mediumtext,
+  TERM_CK char(1),
 	RESER_DT datetime,
 	SEATS_NO int(2),
 	PEOPLE_NUM int(2),
