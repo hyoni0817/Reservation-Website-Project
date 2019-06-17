@@ -57,8 +57,6 @@ function step2BlankCheck() {
   var alertHTML;
   var stat = 0;
 
-  // var arrDtLen = parseInt(allDt.length);
-
   if(selDateVal == 0){
       alertHTML = '<div class="alert alert-danger" role="alert"><strong>다시 확인해주세요!</strong>날짜를 선택하지 않으셨습니다.</div>';
       alertEle[0].innerHTML = alertHTML;
