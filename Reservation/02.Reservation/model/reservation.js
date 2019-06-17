@@ -7,7 +7,7 @@ class Reser {}
 	pool.getConnection((err, conn) => {
 		if(err) return callback(err, null);
     //해외 서버 사용시 date(RESER_DT) > date(date_add(now(), interval 9 hour)) 로 수정하기
-		var sql = 'select DATE_FORMAT(RESER_DT,"%Y-%m-%d") as IMPOSSBLE_DT from reservation3 where (PHONE_NO = ? and USER_NM = ?) and date(RESER_DT) > date(now()) order by RESER_DT;';
+		var sql = 'select DATE_FORMAT(RESER_DT,"%Y-%m-%d") as IMPOSSBLE_DT from reservation where (PHONE_NO = ? and USER_NM = ?) and date(RESER_DT) > date(now()) order by RESER_DT;';
 		conn.query(sql,[tempPhoneNo, tempUserNM], (err, result) => {
 			if(err) {
 					console.error('Error : ', err);
@@ -35,7 +35,7 @@ class Reser {}
 Reser.getReserInfo = function(ReserNo, callback) {
 	pool.getConnection((err, conn) => {
 		if(err) return callback(err, null);
-		var sql = 'select *, DATE_FORMAT(RESER_DT,"%Y-%m-%d") as RESER_DATE, DATE_FORMAT(RESER_DT,"%H:%i:%S") as RESER_TIME  from reservation3 where RESER_NO = ?;';
+		var sql = 'select *, DATE_FORMAT(RESER_DT,"%Y-%m-%d") as RESER_DATE, DATE_FORMAT(RESER_DT,"%H:%i:%S") as RESER_TIME  from reservation where RESER_NO = ?;';
 
 		conn.query(sql,ReserNo, (err, result) => {
 			if(err) {
@@ -68,7 +68,7 @@ Reser.saveReserStep2 = (tempReserNo, tempPhoneNo, tempUserNM, tempEmail, tempReq
 	pool.getConnection( (err, conn) => {
 		if(err) return callback(err, null);
         //공지사항 글 등록하기
-        const sql = 'insert into reservation3 set RESER_NO = ?, USER_NM = ?, PHONE_NO = ?,EMAIL = ?, REQ_TERM = ?, TERM_CK = ?,RESER_DT = ?, SEATS_NO = ?, PEOPLE_NUM = ?, RESERWRI_DT = ?;';
+        const sql = 'insert into reservation set RESER_NO = ?, USER_NM = ?, PHONE_NO = ?,EMAIL = ?, REQ_TERM = ?, TERM_CK = ?,RESER_DT = ?, SEATS_NO = ?, PEOPLE_NUM = ?, RESERWRI_DT = ?;';
         conn.query(sql,[tempReserNo, tempUserNM, tempPhoneNo, tempEmail, tempReqTerm, tempTermCk, tempReserDT, seats, numOfPeople, reserWriDT], (err, results) =>{
             if(err) {
                 console.error('Error : ', err);
@@ -94,10 +94,10 @@ Reser.getOverlapReser = (tempUserNM, tempNum, selDateVal, selTimeVal, selSeatsVa
         var overlap;
         var sql, valArr;
         if(page == 'reser'){
-          sql = 'select \'Y\' as OVERLAP from reservation3 where RESER_DT = ? and SEATS_NO = ?;';
+          sql = 'select \'Y\' as OVERLAP from reservation where RESER_DT = ? and SEATS_NO = ?;';
           valArr = [reserDt, selSeatsVal]
         }else if(page == 'editReser') {
-          sql = 'select \'Y\' as OVERLAP from reservation3 where RESER_DT = ? and SEATS_NO = ? and USER_NM != ? and RESER_NO != ?;';
+          sql = 'select \'Y\' as OVERLAP from reservation where RESER_DT = ? and SEATS_NO = ? and USER_NM != ? and RESER_NO != ?;';
           valArr = [reserDt, selSeatsVal, tempUserNM, tempNum]
         }
         //const sql2 = 'select \'Y\' as SAME_CUSTOMER from reservation where DATE_FORMAT(RESER_DT,"%Y-%m-%d") = ? and USER_NM=? and PHONE_NO=? GROUP BY SAME_CUSTOMER;';
