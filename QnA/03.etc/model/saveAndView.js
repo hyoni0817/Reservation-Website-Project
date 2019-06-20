@@ -118,4 +118,27 @@ QnA.saveQuestionWri = (title, username, inquiry, pw, contents, secretCK, wriDate
 	});
 }
 
+//답변글 등록하기
+QnA.saveAnswerWri = ( queWriNo, adminName, contents, wriDate, callback) => {
+	pool.getConnection( (err, conn) => {
+		if(err) return callback(err, null);
+        //질문의 답글 등록하기
+        const sql = 'insert into answer set QUEWRI_NO = ?, ADMIN_NM = ?, CONTENTS = ?, ANSWRI_DT = ?;';
+				const sql2 = 'UPDATE question SET ANSWER_ST = \'Y\' where WRITE_NO = ?';
+				conn.query(sql+sql2,[ queWriNo, adminName, contents, wriDate, queWriNo], (err, results) =>{
+            if(err) {
+                console.error('Error : ', err);
+                callback(err, null);
+                conn.release();
+                return;
+            }
+            var result1 = results[0];
+            var result2 = results[1];
+            console.log(results);
+						conn.release();
+            return callback(null, {msg : 'success'});
+		});
+	});
+}
+
 module.exports = QnA;

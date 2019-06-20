@@ -13,6 +13,9 @@ router.route('/qna')
 router.route('/qnaView')
   .get(showQnAWri);  //질문 및 답변 글 보기
 
+  router.route('/answerWri')
+    .post(addNewAnswerWri); // 답변 추가하기
+
 router.route('/editQuestion')
   .post(UpdateQnAWri); //질문 수정하기
 
@@ -170,6 +173,25 @@ function UpdateQnAWri(req, res, next) {
 
 
     })
+}
+
+//질문글에 대한 답변 추가하는 소스코드
+function addNewAnswerWri(req, res, next) {
+  var date = new Date();
+
+  const queWriNo = req.body.queWriNo;
+  const adminName = req.body.adminName;
+  const contents = req.body.contents;
+  console.log(contents);
+  const wriDate = date.getFullYear()+"-"+date.getMonth()+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+  SaveAndViewQnA.saveAnswerWri( queWriNo, adminName, contents, wriDate, (err, result) => {
+    if(err) {
+      res.status(500).send({msg:'addNewAnswerWri error'});
+      return;
+    }
+      if(err) return next(err);
+        res.send(result);
+  })
 }
 
 module.exports = router;
