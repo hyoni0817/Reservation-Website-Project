@@ -219,6 +219,8 @@
       var pager = new pager(<%=paging.maxPage %>, <%=paging.page %>, 'qna', '<%=stat.contents %>', <%=stat.ansNum %>, <%=stat.condiNum %>);
       //카테고리 관련 생성자 함수(tabAndSelect.js 파일 참고)
       var nav = new inquiryNavTab(<%=stat.inqNum %>,'<%=stat.contents %>', <%=stat.ansNum %>, <%=stat.condiNum %>);
+      var ansSelect = new ansSelect(<%=stat.ansNum %>)
+
     </script>
 
   </body>

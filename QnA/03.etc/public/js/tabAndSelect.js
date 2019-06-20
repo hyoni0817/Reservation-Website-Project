@@ -29,3 +29,12 @@ function answerSel(inquiryNum, contents, ansNum, condiNum) {
 
   location.href='/qna?inquiry='+inquiryNum+'&answer='+ansEle.value+'&searchContent='+contents+'&condition='+condiNum;
 }
+
+function ansSelect(ansNum){
+  var ansEle = document.getElementById("answer");
+  for(var i=0; i < ansEle.options.length; i++) {
+    if(ansEle.options[i].value == ansNum) {
+      ansEle.options[i].selected = true;
+    }
+  }
+}
