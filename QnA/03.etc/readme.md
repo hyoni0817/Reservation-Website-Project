@@ -3,9 +3,30 @@
 2. 데이터 삽입은 '글쓰기'를 통해 진행해주세요**
 3. 비밀글과 수정, 삭제시 요구하는 비밀번호는 0000 입니다.
 
+## URL 설명
+1. 글 목록보기 : http://localhost:3000/qna
+2. 글 보기: http://localhost:3000/qnaView?page=1&wriNo=8&auth=queWri
+    - page : 글이 위치했던 페이지 번호
+    - wriNo : 글의 번호
+    - part : queWri(질문글 보기), editAndDelete(수정 및 삭제 페이지 보기)의 값을 구분지어 받아들여서 값에 따라 다른 페이지를 나타냅니다.
+ 3. 카테고리 및 검색에 관련된 조건들
+  : http://localhost:3000/qna?inquiry=0&searchContent=0&answer=0&condition=0
+    - inquiry : 문의 카테고리 구분으로 0(전체), 1(예약 문의), 2(운영 문의), 3(기타 문의), 4(건의)입니다.
+    - searchContent : 검색한 내용
+    - answer : 답변 여부를 나타내는 것으로 0(질문 전체), 1(답변 완료)입니다.
+    - condition : 검색할 때 사용하는 조건으로, 1(제목+내용), 2(제목), 3(내용), 4(작성자)를 의미합니다.
+  4. 글의 수정 및 삭제
+   : http://localhost:3000/secretCheck?page=1&wriNo=6&stat=edit&part=editAndDelete
+     - stat: 수정과 삭제를 구분해서 나타내는 것으로, edit(수정), delete(삭제)입니다.
+  5. 비밀글 : http://localhost:3000/secretCheck?page=1&wriNo=7&part=queWri
+     - secretCheck을 제외하고 ? 뒷 부분은 2번의 글 보기에서 전달하는 매개 변수와 같은 의미입니다.
+  
+  
 ## 03.ect 에서 구현한 것
 1. 검색 기능
-  - 답변한 것만 검색
+  - '예약'이라는 단어로 검색했을 때
+  <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/search.png"></p>
+  - 답변한 것만 검색 (아래의 예시 외에 내용 검색에서도 답변한 것만 결과가 나오게끔 할 수 있습니다.)
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer1.png"></p>
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer2.png"></p>
 
