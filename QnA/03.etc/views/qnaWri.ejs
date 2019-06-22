@@ -144,11 +144,11 @@
       var pager = new pager(<%=paging.page %>, <%=paging.prevPage %>, <%=paging.nextPage %>, '<%=paging.prevTitle %>', '<%=paging.nextTitle %>');
       //삭제버튼을 입력했을 떄 비밀번호 입력 페이지로 이동하는 url
       function delCheckUser() {
-        window.location.href="/secretCheck?page=<%=paging.page %>&wriNo=<%=data[0].WRITE_NO%>&stat=delete&auth=editAndDelete";
+        window.location.href="/secretCheck?page=<%=paging.page %>&wriNo=<%=data[0].WRITE_NO%>&stat=delete&part=editAndDelete";
       }
       //수정버튼을 입력했을 떄 비밀번호 입력 페이지로 이동하는 url
       function editCheckUser() {
-        window.location.href="/secretCheck?page=<%=paging.page %>&wriNo=<%=data[0].WRITE_NO%>&stat=edit&auth=editAndDelete";
+        window.location.href="/secretCheck?page=<%=paging.page %>&wriNo=<%=data[0].WRITE_NO%>&stat=edit&part=editAndDelete";
       }
 
     </script>

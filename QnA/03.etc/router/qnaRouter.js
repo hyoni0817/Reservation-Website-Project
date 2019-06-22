@@ -50,7 +50,7 @@ function showQnAWri(req, res) {
     }// 비밀글인거 체크하고 보여주기
 
     if(result.data[0].SECRET_ST == 'Y'){
-      res.redirect('/secretCheck?page='+pageNum+'&wriNo='+wriQnANo+'&auth=queWri');
+      res.redirect('/secretCheck?page='+pageNum+'&wriNo='+wriQnANo+'&part=queWri');
     } else if(result.data[0].SECRET_ST == 'N') {
         res.render('qnaWri.ejs', result);
     }
@@ -64,7 +64,7 @@ function showSecretCheck(req, res) {
     pageNum : req.query.page,
      wriNo : req.query.wriNo,
      stat : req.query.stat,
-     auth : req.query.auth//'queWri'
+     part : req.query.part//'queWri'
   }
 
     res.render('inputPassword.ejs', result);
@@ -80,8 +80,8 @@ function inputSecretNum(req, res, next) {
        return;
      }
 
-     //비밀번호가 맞고 auth가 queWri 일 때(단순히 글 보는 작업일 때)
-     if(result == 'Y' && req.query.auth == 'queWri') {
+     //비밀번호가 맞고 part가 queWri 일 때(단순히 글 보는 작업일 때)
+     if(result == 'Y' && req.query.part == 'queWri') {
        const inputSuccess = 'Y';
 
        SaveAndViewQnA.getQnAWri( req.query, inputSuccess,(err, results) => {
@@ -93,8 +93,8 @@ function inputSecretNum(req, res, next) {
            res.render('qnaWri.ejs', results);
 
        })
-     } else if(result == 'Y' && req.query.auth == 'editAndDelete') {
-       //비밀 먼호가 맞고 auth가 editAndDelete 일 때(글 수정 및 삭제 할 때)
+     } else if(result == 'Y' && req.query.part == 'editAndDelete') {
+       //비밀 먼호가 맞고 part가 editAndDelete 일 때(글 수정 및 삭제 할 때)
        const stat = req.query.stat; //수정 인지 삭제인지 상태 확인
        const pageNum = req.query.page; //해당 글이 있던 페이지 번호
        const wriNo = req.query.wriNo; //글 번호
