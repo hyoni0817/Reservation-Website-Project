@@ -14,7 +14,6 @@ function showReviewList(req, res) {
       res.status(500).send({msg:'getReviewList error'});
       return;
     }
-    console.log(result)
       res.render('index.ejs', result);
   }
  )}
