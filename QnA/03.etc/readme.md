@@ -56,8 +56,8 @@
   
 6. 비밀글 구현
   - 비밀글 구현시 비밀번호를 입력할 때 4자리 미만은 **4~8자리를 충족하지 못합니다**라는 경고가 뜹니다.
-  <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password1.png"></p> 
-  <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password2.png"></p>
+  <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password3.png"></p> 
+  <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password4.png"></p>
   
   - '비밀글로 설정하기'를 체크하면 아래의 사진에서와 같이 잠금 아이콘이 글 제목 옆에 달리며 제목을 누르면 비밀번호 입력하는 페이지가 나옵니다. 
   <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret3.png"></p> 
