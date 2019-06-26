@@ -121,9 +121,9 @@ background-size: cover;
 }
 .reser-second {
   height: auto;
-  width: 100%;
   margin-top: 30px;
   margin-left:20px;
+  margin-right:20px;
 }
 
 #prevMonthBtn, #afterMonthBtn {
