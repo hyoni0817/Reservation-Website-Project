@@ -31,6 +31,16 @@
 1. 날짜, 시간, 인원수, 좌석 선택하기
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/step2.png"></p>
 
+  - 인원을 선택해야 좌석 선택 가능
+  <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/fistpeo1.png"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/fistpeo2.png"></p>
+
+  - 인원수에 따라 선택할 수 있는 좌석이 다름.
+    - 1~2명: 7,16 제외
+    - 3명: 7,16,10~13 제외
+    - 4명: 8~15 제외
+    - 5~6명: 7,16만 가능
+    <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/peoplesel1.png"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/peoplesel2.png"></p>
+
 2. 만약 날짜, 시간, 인원수, 좌석 중 하나라도 선택하지 않을 경우, 알림 메세지 발생
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/error.png"></p>
 
@@ -40,19 +50,11 @@
 4. 동일 날짜, 시간, 좌석에 예약한 내역이 있다면 예약 불가
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/overlap.png"></p>
 
-5. 인원을 선택해야 좌석 선택 가능
-<p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/fistpeo1.png"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/fistpeo2.png"></p>
+5. 당일 예약은 불가하고 다음날 부터 한 달의 기간 내에서만 예약 가능
 
-  - 인원수에 따라 선택할 수 있는 좌석이 다름.
-    - 1~2명: 7,16 제외
-    - 3명: 7,16,10~13 제외
-    - 4명: 8~15 제외
-    - 5~6명: 7,16만 가능
-    <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/peoplesel1.png"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/peoplesel2.png"></p>
-
-6. 당일 예약은 불가하고 다음날 부터 한 달의 기간 내에서만 예약 가능
+    *예) 아래 이미지는 6월 27일 기준*
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/cal1.png" width="400px" height="auto"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/cal2.png" width="400px" height="auto"></p>
-7. step2에서 10분 이내 입력을 마무리하지 못할 시 세션 만료가 되어 다시 처음 페이지로 이동
+6. step2에서 10분 이내 입력을 마무리하지 못할 시 세션 만료가 되어 다시 처음 페이지로 이동
 <p align="center"><img src="https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/reser02/step2/sessionover.png"></p>
 
 ### step3
