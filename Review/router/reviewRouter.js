@@ -83,7 +83,7 @@ function addNewReviewWri(req, res, next) {
         const reserNo = fields['reserNo'];
         const reserDt = fields['reserDt'];
         const stars = fields['stars'];
-        const wriDate = date.getFullYear()+"-"+date.getMonth()+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+        const wriDate = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
 
         if(!title) return res.status(400).send({msg:'title error'});
         if(!reviewImg) return res.status(400).send({msg:'reviewImg error'});
@@ -91,15 +91,15 @@ function addNewReviewWri(req, res, next) {
         if(!reserNo) return res.status(400).send({msg:'reserNo error'});
         if(!stars) return res.status(400).send({msg:'stars error'});
 
-        if(reviewImg == null) {
-          reviewImg = '0';
+        if(reviewImg.name == '') {
+          reviewImg = 'N';
         }
         done(null, title, reviewImg, contents, reserNo, stars, wriDate, reserDt);
       });
     },
     (title, reviewImg, contents, reserNo, stars, wriDate, reserDt, done) => {
       const now = new Date();
-      if(reviewImg == '0') {
+      if(reviewImg == 'N') {
         return done(null, title, reviewImg, contents, reserNo, stars, wriDate, reserDt);
         }
         const contentType = reviewImg.type;
@@ -131,10 +131,10 @@ function addNewReviewWri(req, res, next) {
         done(null, title, imageUrl, contents, reserNo, stars, wriDate, reserDt);
       },
       (title, imageUrl, contents, reserNo, stars, wriDate, reserDt, done) => {
-        if(imageUrl == undefined)
-        {
-          imageUrl = '0';
-        }
+        // if(imageUrl == undefined)
+        // {
+        //   imageUrl = 'N';
+        // }
         // 매개변수를 전달 받아서 리뷰글을 저장
         Review.saveReviewWri(title, imageUrl, contents, reserNo, stars, wriDate, reserDt, (err, result) => {
           if(err) return next(err);
