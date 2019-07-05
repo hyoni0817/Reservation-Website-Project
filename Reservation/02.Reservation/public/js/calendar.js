@@ -344,12 +344,15 @@ function Calendar(impDate) {
                   calendarHTML +='<div class="aleady-text">이미 예약하신 내역이 있습니다.</div></td>'
                   if(arrNum < impDate.length-1) {
                     arrNum++;
-
                     if(tempArrNum==0) { //tempArrNum 값이 0일 때만 저장.
-                      tempArrNum = arrNum-1;
+                      tempArrNum = arrNum-1; 
                       //이전달에서 다음달로 넘어간 주(마지막 주 기준으로 31,1,2,3으로 시작하는)에서
                       //처음 시작하는 예약 내역의 배열 원소 번호값을 저장.
+
                     }
+                  } else if(arrNum < 2) {
+                    //이미 선택한 날짜가 2개일 때(즉, impDate.length 가 2일 때)
+                    tempArrNum = arrNum;
                   }
 
                 } else {
@@ -370,7 +373,9 @@ function Calendar(impDate) {
 
           //다음달 버튼으로 눌러서 넘어왔을 떄 tempArrNum을 저장하고, 처음 현재 달을 보여 줄 때는 원래 값이 arrNum을 저장.
           arrNum = (AfterBtnClick == true ? tempArrNum : arrNum);
+
           if(impDate.length > 0 && splitImpDate[arrNum][0] == inputY && (splitImpDate[arrNum][1]-1) == inputM && splitImpDate[arrNum][2] == dateNum){
+
             calendarHTML += '<td><input class="aleady-date" type="button" value=' + dateNum + ' disabled>';
             calendarHTML +='<div class="aleady-text">이미 예약하신 내역이 있습니다.</div></td>'
 
