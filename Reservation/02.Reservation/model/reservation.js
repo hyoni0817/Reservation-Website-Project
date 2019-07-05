@@ -17,7 +17,7 @@ class Reser {}
 			}
 
 			var res, impDate;
-			var impArr = result[0] || '0'; //예약이 불가능한 데이터 집합
+			var impArr = result || '0'; //예약이 불가능한 데이터 집합
 			var obj = {
 				MAXAGE : maxAge,
 				impDt : impArr
