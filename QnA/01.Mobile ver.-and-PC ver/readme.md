@@ -5,10 +5,10 @@
 - 글 보기 : http://localhost:3000/qnaView
 2. 반응형 웹으로서 **PC버전**과 **모바일**에서 보이는 글 목록이 아래의 이미지와 같이 다르게 나타나게 했습니다.
            
-![Alt text](https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistP2.png)
-![Alt text](https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistM2.png)       
+![Alt text](https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistP2.png)
+![Alt text](https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistM2.png)       
 
 3. 아래 이미지는 **PC버전**과 **모바일**에서 보이는 작성글 페이지 입니다.           
            
-![Alt text](https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewP2.png)
-![Alt text](https://devdata2018.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewM2.png)
+![Alt text](https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewP2.png)
+![Alt text](https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewM2.png)
