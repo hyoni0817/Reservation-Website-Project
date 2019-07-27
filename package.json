@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.3",
     "aws-sdk": "^2.340.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
