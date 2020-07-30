@@ -43,39 +43,39 @@
   
 4. 글 보기 /글쓰기 / 수정 / 삭제 구현
   - 수정 및 삭제 시 비밀번호 입력받아야 다음 작업 수행 가능하게 했습니다.
-    <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit2.png" width="400" height="auto"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/delete2.png" width="400" height="auto"></p>
+    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit2.png" width="400" height="auto"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/delete2.png" width="400" height="auto"></p>
     
   - 수정을 할 떄 비밀번호를 입력하지 않고 폼을 제출하면 기존 비밀번호를 유지할 수 있게 했습니다.
-    <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit3.png"></p>
+    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit3.png"></p>
     
   - 글쓰는 도중에 페이지를 벗어날려고하면 경고문을 띄웁니다.
-    <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/out.png"></p>
+    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/out.png"></p>
   
 5. 모바일 / PC ver. 화면 구현
   - *QnA 폴더 내 01번 폴더 readme.md 참고해주세요*
   
 6. 비밀글 구현
   - 비밀글 구현시 비밀번호를 입력할 때 4자리 미만은 **4~8자리를 충족하지 못합니다**라는 경고가 뜹니다.
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password3.png"></p> 
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password4.png"></p>
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password3.png"></p> 
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password4.png"></p>
   
   - '비밀글로 설정하기'를 체크하면 아래의 사진에서와 같이 잠금 아이콘이 글 제목 옆에 달리며 제목을 누르면 비밀번호 입력하는 페이지가 나옵니다. 
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret3.png"></p> 
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret1.png"></p>   
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret2.png"></p>  
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret3.png"></p> 
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret1.png"></p>   
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret2.png"></p>  
 
 7. 답변 달기
   - 답변은 postman을 통해 추가하거나 직접 DB에 삽입해서 이용해주세요.      
     **postman을 통해 데이터 삽입할려고 한다면 아래의 이미지를 참고해주세요. 단 Hearders의 content-type 체크는 해제해주세요.**     
     **x-www-form-urlencoded** 를 선택해주시고 key는 **queWriNo**(int형으로 답변할 질문글의 글번호를 입력해주세요), **adminName**(varchar형으로 원하는 이름으로 넣어주시고 빈칸일 경우에는 관리자가 입력됩니다), **contents**(mediumtext형으로 답변할 내용을 입력해주세요)
-    <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/postman.png"></p>   
+    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/postman.png"></p>   
     
   - 답변이 달렸을 때 답변 상태 변경됩니다 
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer1.png"></p>
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer1.png"></p>
   
   - 답변이 달린 후에는 수정하기 및 삭제 버튼이 사라지게 했습니다.
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer2.png"></p>   
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer2.png"></p>   
   
 8. 조회수 구현
 > 단, 비밀글은 비밀번호를 입력하고 글을 봐야 조회수가 증가합니다.
-<p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/views1.png"></p>   
+<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/views1.png"></p>   
