@@ -25,21 +25,21 @@
 ## 03.ect 에서 구현한 것
 1. 검색 기능
   - '예약'이라는 단어로 검색했을 때
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/search.png"></p>
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/search.png"></p>
   - 답변한 것만 검색 (아래의 예시 외에 내용 검색에서도 답변한 것만 결과가 나오게끔 할 수 있습니다.)
-<p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer1.png"></p>
-<p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer2.png"></p>
+<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer1.png"></p>
+<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer2.png"></p>
 
   - 제목+내용/제목만/내용만/작성자 중 선택해서 검색이 가능합니다
-<p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/multi.png"></p>
+<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/multi.png"></p>
 
 2. 페이지네이션 기능
   - 한 페이지당 글이 10개씩 보이며 글을 추가할 때마다 페이지가 추가 됩니다.
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/pagination.png"></p>
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/pagination.png"></p>
   
 3. 카테고리 선택 기능
   - 전체/예약 문의/운영문의/기타 문의/건의사항
-  <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/qna03/category.png"></p>
+  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/category.png"></p>
   
 4. 글 보기 /글쓰기 / 수정 / 삭제 구현
   - 수정 및 삭제 시 비밀번호 입력받아야 다음 작업 수행 가능하게 했습니다.
