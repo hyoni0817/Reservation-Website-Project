@@ -8,17 +8,17 @@
   - 페이지네이션 : http://localhost:3000/?page=1
   
       page: 페이지 번호
- <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/pagination/all.png"></p>
+ <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/pagination/all.png"></p>
  
  2. 페이지네이션과 함께 제공된 버튼의 역할
   - &gt;는 5개 단위로 다음 페이지 번호를 보여주는 역할을 합니다. 아래의 이미지는 페이지가 8페이지까지 있어서 8까지 나타냅니다.
-   <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/pagination/next.png" ></p>
+   <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/pagination/next.png" ></p>
    
   - &raquo; 는 제일 마지막 페이지 번호를 보여줍니다.
-   <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/pagination/end.png"></p>
+   <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/pagination/end.png"></p>
    
   - &lt; 는 5개 단위로 이전 페이지 번호를 보여주는 역할을 합니다. 아래의 이미지는 6페이지에서 버튼을 눌렀기때문에 이전 페이지 번호인 5페이지를 보여줍니다.
-   <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/pagination/prev.png"></p>
+   <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/pagination/prev.png"></p>
    
   - &laquo; 는 제일 첫번째 페이지 번호를 보여줍니다.
-   <p align="center"><img src="https://devdata201907.s3.ap-northeast-2.amazonaws.com/markdown/pagination/first.png"></p>
+   <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/pagination/first.png"></p>
