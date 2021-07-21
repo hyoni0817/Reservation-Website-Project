@@ -80,7 +80,7 @@
                         <%if(data[i].SECRET_ST == 'Y') { %>
                           <img style="width:auto;height:20px;" src="/img/locked.png"></img>
                         <% } %>
-                        <a id="aTitle" href="/qnaView?page=<%=paging.page %>&wriNo=<%=data[i].WRITE_NO %>&auth=queWri"><%=data[i].TITLE %></a></td><!--옆에 NEW 표시 달기 -->
+                        <a id="aTitle" href="/qnaView?page=<%=paging.page %>&wriNo=<%=data[i].WRITE_NO %>"><%=data[i].TITLE %></a></td><!--옆에 NEW 표시 달기 -->
 
                       <td>
                         <%if(data[i].ANSWER_ST == 'Y') { %>
@@ -110,7 +110,7 @@
 
                   <% } else { %>
                   <% for(var i = 0; i < paging.count ; i++) { %>
-              <tr class="qna-tr-mobile" style="cursor:pointer" onClick="location.href='/qnaView?page=<%=paging.page %>&wriNo=<%=data[i].WRITE_NO %>&auth=queWri'">
+              <tr class="qna-tr-mobile" style="cursor:pointer" onClick="location.href='/qnaView?page=<%=paging.page %>&wriNo=<%=data[i].WRITE_NO %>">
                   <td style="text-align:center;"><%=data[i].CATEGORY %></td>
                   <td>
                     <%if(data[i].SECRET_ST == 'Y') { %>
