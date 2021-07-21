@@ -2,7 +2,7 @@
 <p align="center">
   식당 예약 웹사이트를 제작하면서 구현한 기능들을 정리한 것 입니다.
 </p>
-<p align="center">
+<div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=Html5&logoColor=white"></img>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"></img>
   <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"></img>
@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/express-4.16.3-lightgray?style=flat-square"></img>
   <img src="https://img.shields.io/badge/ejs-2.6.1-blueviolet?style=flat-square"></img>
   <img src="https://img.shields.io/badge/MySQL-8.0-blue?style=flat-square"></img> 
-</p>
+</div>
 
 <!-- GIF 추가하기 -->
 
