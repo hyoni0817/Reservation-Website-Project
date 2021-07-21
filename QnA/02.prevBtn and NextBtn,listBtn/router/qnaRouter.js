@@ -15,6 +15,7 @@ router.route('/qnaView')
 function showQnA(req, res) {
   QnA.getQnAList( req.query,(err, result) => {
     if(err) {
+      console.log(err);
       res.status(500).send({msg:'getQnAList error'});
       return;
     }
