@@ -33,58 +33,95 @@
 ## 03.ect 에서 구현한 것
 1. 검색 기능
   - '예약'이라는 단어로 검색했을 때
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/search.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/search.png">
+    </div>
 
   - 답변한 것만 검색 가능(아래 예시 외에 내용 검색에서도 답변한 것만 결과가 나오게끔 할 수 있음)
-<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer1.png"></p>
-<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer2.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.;amazonaws.com/markdown/qna03/searchanswer1.png">
+    </div>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/searchanswer2.png">
+    </div>
 
   - 제목+내용/제목만/내용만/작성자 중 선택해서 검색 가능
-<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/multi.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/multi.png">
+    </div>
 
 2. 페이지네이션 기능
   - 한 페이지당 글이 10개씩 보이며 글을 추가할 때마다 페이지가 추가
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/pagination.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/pagination.png">
+    </div>
   
 3. 카테고리 선택 기능
   - 전체/예약 문의/운영문의/기타 문의/건의사항 
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/category.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/category.png">
+    </div>
   
 4. 글 보기 /글쓰기 / 수정 / 삭제 구현
   - 수정 및 삭제 시 비밀번호 입력받아야 다음 작업 수행 가능
-    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit2.png" width="400" height="auto"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/delete2.png" width="400" height="auto"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit2.png" width="400" height="auto">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/delete2.png" width="400" height="auto">
+    </div>
     
   - 수정을 할 떄 비밀번호를 입력하지 않고 폼을 제출하면 기존 비밀번호를 유지
-    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit3.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/edit3.png">
+    </div>
     
   - 글 쓰는 도중에 페이지를 벗어나려고 할 때 경고문을 띄우기
-    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/out.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/out.png">
+    </div>
   
 5. 모바일 / PC ver. 화면 구현
   - *QnA 폴더 내 01번 폴더 readme.md 참고해주세요*
   
 6. 비밀글 구현
   - 비밀글 구현시 비밀번호를 입력할 때 4자리 미만은 **4~8자리를 충족하지 못합니다**라는 경고 나타내기
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password3.png"></p> 
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password4.png"></p>
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password3.png">
+    </div> 
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/password4.png">
+    </div>
   
   - '비밀글로 설정하기'를 체크하면 아래의 사진에서와 같이 잠금 아이콘이 글 제목 옆에 달리며 제목을 누르면 비밀번호 입력하는 페이지 나타내기. 
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret3.png"></p> 
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret1.png"></p>   
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret2.png"></p>  
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret3.png">
+    </div> 
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret1.png">
+    </div>   
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/secret2.png">
+    </div>  
 
 7. 답변 달기
   - 답변은 postman을 통해 추가하거나 직접 DB에 삽입해서 이용해주세요.      
     **postman을 통해 데이터 삽입할려고 한다면 아래의 이미지를 참고해주세요. 단 Hearders의 content-type 체크는 해제해주세요.**     
     **x-www-form-urlencoded** 를 선택해주시고 key는 **queWriNo**(int형으로 답변할 질문글의 글번호를 입력해주세요), **adminName**(varchar형으로 원하는 이름으로 넣어주시고 빈칸일 경우에는 관리자가 입력됩니다), **contents**(mediumtext형으로 답변할 내용을 입력해주세요)
-    <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/postman.png"></p>   
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/postman.png">
+    </div>   
     
   - 답변이 달렸을 때 답변 상태 변경 
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer1.png"></p>
-  
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer1.png">
+    </div>
+    
   - 답변이 달린 후에는 수정하기 및 삭제 버튼 지우기
-  <p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer2.png"></p>   
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/answer2.png">
+    </div>   
   
 8. 조회수 구현
-> 단, 비밀글은 비밀번호를 입력하고 글을 봐야 조회수가 증가합니다.
-<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/views1.png"></p>   
+  - 단, 비밀글은 비밀번호를 입력하고 글을 봐야 조회수가 증가합니다.
+    <div align="center">
+      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna03/views1.png">
+    </div>   
