@@ -11,10 +11,13 @@
 
 ## Mobile ver.-and-PC ver 에서 구현한 것
 1. 반응형 웹으로서 **PC버전**과 **모바일**에서 보이는 글 목록이 아래의 이미지와 같이 다르게 나타나게 했습니다.
-![Alt text](https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistP2.png)
-![Alt text](https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistM2.png)       
+<div align="center">
+    <img alt="글 목록_PC버전" src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistP2.png" />
+    <img alt="글 목록_모바일" src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wrilistM2.png" />
+</div>          
 
-2. 아래 이미지는 **PC버전**과 **모바일**에서 보이는 작성글 페이지 입니다.           
-           
-![Alt text](https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewP2.png)
-![Alt text](https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewM2.png)
+2. 아래 이미지는 **PC버전**과 **모바일**에서 보이는 작성글 페이지 입니다.    
+<div align="center">
+    <img alt="글 보기_PC버전" src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewP2.png" />
+    <img alt="글 보기_모바일" src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/qna01/1_wriviewM2.png" />
+</div> 
