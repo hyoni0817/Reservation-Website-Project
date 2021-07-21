@@ -13,7 +13,7 @@
 
 ## URL 설명
 1. 글 목록보기 : <http://localhost:3000/qna>
-2. 글 보기: <http://localhost:3000/qnaView?page=1&wriNo=8&auth=queWri>
+2. 글 보기: <http://localhost:3000/qnaView?page=1&wriNo=8&part=queWri>
     - page : 글이 위치했던 페이지 번호
     - wriNo : 글의 번호
     - part : queWri(질문글 보기), editAndDelete(수정 및 삭제 페이지 보기)의 값을 구분지어 받아들여서 값에 따라 다른 페이지를 나타냅니다.
