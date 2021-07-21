@@ -1,13 +1,21 @@
 ## 프로그램 실행 전 주의사항
-1. DB가 연동되어 있으므로 02.Reservation 폴더 내의 reserSQL을 통해 테이블 생성 및 데이터 삽입 후 app.js 파일을 실행시켜주세요.
-2. 데이터 삽입은 예약하는 과정을 통해 진행해주세요.
+1. 데이터 삽입은 예약하는 과정을 통해 진행해주세요.
+
+## 사용법
+1. model/dbConnetion.js 에서 자신의 DB 환경에 맞게 각 속성값을 수정해주세요.
+2. MySQL로 reserSQL.sql 파일을 실행시켜서 테이블 생성 및 데이터 삽입을 해주세요. 데이터는 직접 더 많이 추가할 수 있습니다.
+3. 마지막으로 02.Reservationk 경로에서 app.js를 실행시켜줍니다.
+   ```
+   node app.js
+   ```
+4. app.js를 실행하고 난 뒤, 아래 URL 설명을 참고해서 step1 부터 차례대로 진행해주세요.   
 
 ## URL 설명
 예약하는 단계가 총 3가지로 이루어져 있습니다.    
 
-**step1** - 예약자 정보 입력하기 : http://localhost:3000/reser/step1       
-**step2** - 예약 날짜, 시간, 인원수, 좌석 선택하기 : http://localhost:3000/reser/step2     
-**step3** - 입력한 내역 확인하기 : http://localhost:3000/reser/step3       
+**STEP1** - 예약자 정보 입력하기 : http://localhost:3000/reser/step1       
+**STEP2** - 예약 날짜, 시간, 인원수, 좌석 선택하기 : http://localhost:3000/reser/step2     
+**STEP3** - 입력한 내역 확인하기 : http://localhost:3000/reser/step3       
 
 ## 02.Reservation 에서 구현한 것
 

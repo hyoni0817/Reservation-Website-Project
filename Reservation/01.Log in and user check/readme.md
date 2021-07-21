@@ -1,10 +1,17 @@
 ## 프로그램 실행 전 주의사항
-1. DB가 연동되어 있으므로 01.Log in and user check 폴더 내의 reserSQL을 통해 테이블 생성 및 데이터 삽입 후 app.js 파일을 실행시켜주세요.
-2. 바로 테스트 해보실려면 예약번호는 **952589**, 이름은 **김지선** 을 입력해주세요.
+1. 바로 테스트 해보실려면 예약번호는 **952589**, 이름은 **김지선** 을 입력해주세요.
 
-## URL 설명
-1. 예약 정보 입력하기 : http://localhost:3000/
-2. 예약 정보 내용 보기 : http://localhost:3000/reserList
+## 사용법
+1. model/dbConnetion.js 에서 자신의 DB 환경에 맞게 각 속성값을 수정해주세요.
+2. MySQL로 reserSQL.sql 파일을 실행시켜서 테이블 생성 및 데이터 삽입을 해주세요. 데이터는 직접 더 많이 추가할 수 있습니다.
+3. 마지막으로 01.Log in and user check 경로에서 app.js를 실행시켜줍니다.
+   ```
+   node app.js
+   ```
+4. app.js를 실행하고 난 뒤, 아래 URL을 통해서 예약 정보 입력 및 내용을 확인 할 수 있습니다.   
+**🖥URL**   
+예약 정보 입력하기 : <http://localhost:3000/>    
+예약 정보 내용 보기 : <http://localhost:3000/reserList>    
 
 ## 01.Log in and user check에서 구현한 것
 1. 예약 번호와 이름을 입력받아서 로그인합니다.
