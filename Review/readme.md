@@ -1,11 +1,18 @@
 ## 사용법
 1. model/dbConnetion.js 에서 자신의 DB 환경에 맞게 각 속성값을 수정해주세요.
 2. MySQL로 reviewSQL.sql 파일을 실행시켜서 테이블 생성 및 데이터 삽입을 해주세요. 데이터는 직접 더 많이 추가할 수 있습니다.
-3. 마지막으로 app.js를 실행시켜줍니다.
+3. router/reviewRouter.js 에서 아래 코드 부분에 자신의 AWS S3 정보로 수정해줍니다.
+    ```javascript
+    var AWS = require('aws-sdk');
+    AWS.config.region = "Input your region";
+    AWS.config.accessKeyId = "Your accessKeyId";
+    AWS.config.secretAccesskey = "Your secretAccesskey";
+    ```
+4. 마지막으로 app.js를 실행시켜줍니다.
    ```
    node app.js
    ```
-4. app.js를 실행하고 난 뒤, 아래 URL 설명을 참고하여 접속해주세요.  
+5. app.js를 실행하고 난 뒤, 아래 URL 설명을 참고하여 접속해주세요.  
 
 ## URL 설명
 1. 리뷰 보기 : http://localhost:3000/ or http://localhost:3000/?page=1
