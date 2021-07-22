@@ -28,7 +28,7 @@
 
 
 ## 설치 방법
-1. 이 repository를 clone 합니다.
+1. 이 repository를 clone 해준 뒤, Reservation-Website-Project 폴더로 이동해서 npm 모듈을 설치해줍니다. 
     ```
     git clone https://github.com/hyoni0817/Reservation-Website-Project.git
     cd Reservation-Website-Project && npm install
