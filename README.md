@@ -31,7 +31,7 @@
 1. 이 repository를 clone 합니다.
     ```
     git clone https://github.com/hyoni0817/Reservation-Website-Project.git
-    cd React-chat-app && npm install
+    cd Reservation-Website-Project && npm install
     ```
 2. 각 폴더마다 따로 실행되게 되어있습니다.   
    실행해보고 싶은 폴더의 README를 참고하여 사용해주세요.
