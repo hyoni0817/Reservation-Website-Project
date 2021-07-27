@@ -9,8 +9,8 @@
 **🖥URL** : <http://localhost:3000/>
 
 ## Like-and-Hate 에서 구현한 것
-1. 작성된 리뷰의 제목을 누르면 <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/like.png" height="18ox" width="18px">(좋아요)와 <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/hate.png" height="18ox" width="18px">(싫어요)를 누를 수 있는 버튼이 구현되어 있습니다.
-<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/all.png"></p>
+1. 작성된 리뷰의 제목을 누르면 <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/like.png" height="18ox" width="18px">(좋아요)와 <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/hate.png" height="18ox" width="18px">(싫어요)를 누를 수 있는 버튼이 구현되어 있습니다.
+<p align="center"><img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/all.png"></p>
 
 2. ip주소를 검사해서 중복으로 좋아요/싫어요를 누르지 못하도록 합니다.
-<p align="center"><img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/already.png"></p>
+<p align="center"><img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/likeandHate/already.png"></p>

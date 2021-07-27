@@ -27,71 +27,71 @@
 ## Review에서 구현한 것
 1. 리뷰 보기 
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/view.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/view.png">
     </div>
   
   - 이미지를 나타낼 수도 있습니다. 
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/img.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/img.png">
     </div>
   
 2. 페이지네이션 기능 
   - 한 페이지당 글이 10개씩 보이며 글을 추가할 때마다 페이지가 추가 됩니다.
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/page.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/page.png">
     </div>
   
 3. 리뷰 정렬 선택 기능
   - 최근 방문순 
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/newest.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/newest.png">
     </div>
   
   - 호감순
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/likearr.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/likearr.png">
     </div>
   
   - 별점순
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/stars.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/stars.png">
     </div>
     
 
 4. 좋아요 / 싫어요 선택 기능 
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/like.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/like.png">
     </div>
   
   - 좋아요 / 싫어요를 중복으로 누를 수 없습니다. 
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/likeoverlap.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/likeoverlap.png">
     </div>
   
 
 5. 글쓰기
   - 글쓰기 전에 이름 및 전화번호를 입력받습니다.
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/np.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/np.png">
     </div>
   
   - 입력받은 이름 및 전화번호를 바탕으로 리뷰 쓰기가 가능한 예약 내역들과 작성 폼을 보여주고, 이 때 예약 시간으로 부터 한시간이 지난 것만 작성할 수 있습니다.
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/write.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/write.png">
     </div>
   
   - 이미 작성한 리뷰는 수정 및 재작성이 불가합니다.
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/nowrite.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/nowrite.png">
     </div>
   
   - 방문 날짜에 대한 리뷰를 다 작성했다면 더이상 리뷰를 작성할 수 없습니다.
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/complete.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/complete.png">
     </div>
   
   - 예약 취소 및 예약한 내역이 없으면 리뷰를 작성할 수 없습니다.
     <div align="center">
-      <img src="https://devwebdata2020.s3.ap-northeast-2.amazonaws.com/markdown/reviews/noperson.png">
+      <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/markdown/reviews/noperson.png">
     </div>
   
