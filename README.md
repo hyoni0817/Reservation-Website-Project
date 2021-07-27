@@ -7,8 +7,7 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"></img>
   <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"></img>
   <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=Bootstrap&logoColor=white"></img>
-  <img src="https://img.shields.io/badge/
-  Amazon S3-569A31?style=flat-square&logo=Amazon S3&logoColor=white"></img><br/>
+  <img src="https://img.shields.io/badge/Amazon S3-569A31?style=flat-square&logo=Amazon%20S3&logoColor=white"></img><br/>
   <img src="https://img.shields.io/badge/node.js-12.18.3-green?style=flat-square"></img>
   <img src="https://img.shields.io/badge/express-4.16.3-lightgray?style=flat-square"></img>
   <img src="https://img.shields.io/badge/ejs-2.6.1-blueviolet?style=flat-square"></img>
