@@ -13,8 +13,9 @@
   <img src="https://img.shields.io/badge/ejs-2.6.1-blueviolet?style=flat-square"></img>
   <img src="https://img.shields.io/badge/MySQL-8.0-blue?style=flat-square"></img> 
 </div>
-
-<!-- GIF 추가하기 -->
+<div align="center">
+  <img src="https://devwebdata2021.s3.ap-northeast-2.amazonaws.com/readme/reservation.gif"></img>
+</div>
 
 ## 각 폴더에서 구현된 기능 소개
 자세한 내용은 각 폴더의 README를 참고해주세요.
