@@ -26,10 +26,6 @@
 - [Reservation](https://github.com/hyoni0817/Reservation-Website-Project/tree/master/Reservation) : 예약 하기와 예약 내역 확인 기능
 - [Review](https://github.com/hyoni0817/Reservation-Website-Project/tree/master/Review) : 리뷰 보기와 예약자만 리뷰 작성 가능한 기능 (리뷰 작성시 AWS S3를 사용하여 이미지 업로드 가능)
 
-## Demo
-구현된 모든 기능들을 아래의 링크를 통해 미리 경험해 볼 수 있습니다.   
-🏠 [식당 예약 웹 사이트로 이동하기](http://13.125.220.200:3000/)
-
 ## 설치 방법
 1. 이 repository를 clone 해준 뒤, Reservation-Website-Project 폴더로 이동해서 npm 모듈을 설치해줍니다. 
     ```
